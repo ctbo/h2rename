@@ -1,0 +1,12 @@
+H2rename by Harald Boegeholz (bo@ct.de) / c't Magazin, www.ct.de
+
+H2rename is a batch renaming program for files and directories. It
+DOES NOT support regular expressions. Its strength is recognizing
+special characters like umlauts that have been broken by transfering
+files between, e.g., Windows and Linux. In this case H2rename will
+automatically suggest renaming rules to fix them.
+
+This program served as an example in an article about Qt programming
+published in c't 15/2009, p. 186.
+
+www.heise.de/artikel-archiv/ct/2009/15/186
