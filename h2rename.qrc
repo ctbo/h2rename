@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>qt_de.qm</file>
+        <file>h2rename.qm</file>
+        <file>h2rename_de.qm</file>
+        <file>h2rename_nl.qm</file>
+    </qresource>
+</RCC>
