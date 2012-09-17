@@ -32,7 +32,7 @@ class RenameRule
 {
 public:
 	RenameRule(const QString &s1 = QString(), const QString &s2 = QString())
-		{ column[0] = s1; column[1] = s2; highlight = false;};
+        { column[0] = s1; column[1] = s2; highlight = false;}
 	enum Columns {Search = 0, Replace, NCOLUMNS};
 	QString column[NCOLUMNS];
 	bool highlight;
@@ -90,7 +90,7 @@ public:
 	Name(const QString& name = QString(), Type type = Undefined,
 		 const QString &path = QString(), const QString &newname = QString())
 		: name(name), type(type), path(path), newname(newname), isChanged(false), isUnique(true)
-	{};
+    {}
 	QString typeString(void) const
 	{
 		switch (type)
@@ -118,7 +118,7 @@ class Directory
 public:
 	Directory(const QString& path = QString())
 		: path(path), nChanged(0), nCollisions(0)
-	{};
+    {}
 
 	QVector<Name> names;
 	QString path;
@@ -189,10 +189,10 @@ public:
 	}
 	enum Type {ShowAll = 0, ShowChanged, ShowHighlights, ShowCollisions};
 
-	Type filterType() {return curFilter;};
+    Type filterType() {return curFilter;}
 
 public slots:
-	void setFilterType(Type filterType) {curFilter = filterType; filterChanged();};
+    void setFilterType(Type filterType) {curFilter = filterType; filterChanged();}
 	void highlightsChanged();
 
 protected:
